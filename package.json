@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-gameface-tailwind",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An ESLint plugin that validates Tailwind CSS classes and inline CSS styles in JavaScript/JSX files against [Coherent Labs Gameface Framework](https://docs.coherent-labs.com/cpp-gameface/) compatibility.",
   "main": "index.js",
   "directories": {
