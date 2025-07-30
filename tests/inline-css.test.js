@@ -2,7 +2,7 @@
  * Tests for gameface-inline-css rule
  */
 
-const rule = require('../lib/rules/gameface-inline-css');
+const rule = require('../lib/rules/inline-css');
 const { RuleTester } = require('eslint');
 
 const ruleTester = new RuleTester({
@@ -22,7 +22,7 @@ const ruleTester = new RuleTester({
   }
 });
 
-ruleTester.run('gameface-inline-css', rule, {
+ruleTester.run('inline-css', rule, {
   valid: [
     // Supported flexbox properties
     {

@@ -2,7 +2,7 @@
  * Tests for gameface-tailwind rule
  */
 
-const rule = require('../lib/rules/gameface-tailwind');
+const rule = require('../lib/rules/tailwind');
 const { RuleTester } = require('eslint');
 
 const ruleTester = new RuleTester({
@@ -22,7 +22,7 @@ const ruleTester = new RuleTester({
   }
 });
 
-ruleTester.run('gameface-tailwind', rule, {
+ruleTester.run('tailwind', rule, {
   valid: [
     // Supported Flexbox classes
     {

@@ -10,8 +10,8 @@ console.log('🧪 Running ESLint Plugin Gameface Tests\n');
 
 // Test files to run
 const testFiles = [
-  'tests/gameface-tailwind.test.js',
-  'tests/gameface-inline-css.test.js',
+  'tests/tailwind.test.js',
+  'tests/inline-css.test.js',
   'tests/non-react.test.js'
 ];
 

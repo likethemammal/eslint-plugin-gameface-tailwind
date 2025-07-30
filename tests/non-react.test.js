@@ -2,8 +2,8 @@
  * Tests for non-React cases in gameface rules
  */
 
-const tailwindRule = require('../lib/rules/gameface-tailwind');
-const inlineCSSRule = require('../lib/rules/gameface-inline-css');
+const tailwindRule = require('../lib/rules/tailwind');
+const inlineCSSRule = require('../lib/rules/inline-css');
 const { RuleTester } = require('eslint');
 
 const ruleTester = new RuleTester({
@@ -22,7 +22,7 @@ const ruleTester = new RuleTester({
 
 console.log('Testing Tailwind rule for non-React cases...');
 
-ruleTester.run('gameface-tailwind-non-react', tailwindRule, {
+ruleTester.run('tailwind-non-react', tailwindRule, {
   valid: [
     // Vanilla JS with supported classes
     {
@@ -86,7 +86,7 @@ ruleTester.run('gameface-tailwind-non-react', tailwindRule, {
 
 console.log('Testing Inline CSS rule for non-React cases...');
 
-ruleTester.run('gameface-inline-css-non-react', inlineCSSRule, {
+ruleTester.run('inline-css-non-react', inlineCSSRule, {
   valid: [
     // Vanilla JS with supported styles
     {

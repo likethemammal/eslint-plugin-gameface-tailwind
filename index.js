@@ -3,8 +3,8 @@
  * Validates Tailwind classes and inline CSS against Gameface supported features
  */
 
-const gamefaceTailwind = require('./lib/rules/gameface-tailwind');
-const gamefaceInlineCSS = require('./lib/rules/gameface-inline-css');
+const gamefaceTailwind = require('./lib/rules/tailwind');
+const gamefaceInlineCSS = require('./lib/rules/inline-css');
 
 module.exports = {
   meta: {

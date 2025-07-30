@@ -53,8 +53,8 @@ export default [
       'gameface-tailwind': gamefaceTailwind
     },
     rules: {
-      'gameface-tailwind/gameface-tailwind': 'error',
-      'gameface-tailwind/gameface-inline-css': 'error'
+      'gameface-tailwind/tailwind': 'error',
+      'gameface-tailwind/inline-css': 'error'
     }
   }
 ];
@@ -65,8 +65,8 @@ export default [
 {
   "plugins": ["gameface-tailwind"],
   "rules": {
-    "gameface-tailwind/gameface-tailwind": "error",
-    "gameface-tailwind/gameface-inline-css": "error"
+    "gameface-tailwind/tailwind": "error",
+    "gameface-tailwind/inline-css": "error"
   }
 }
 ```
