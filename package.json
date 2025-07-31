@@ -10,9 +10,10 @@
   "scripts": {
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "test:unit": "jest",
-    "test:rules": "node test-runner.js",
-    "test": "npm run test:rules && npm run test:unit"
+    "test:only:performance": "jest tests/performance/",
+    "benchmark": "node scripts/benchmark.js",
+    "benchmark:verbose": "node --expose-gc scripts/benchmark.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",

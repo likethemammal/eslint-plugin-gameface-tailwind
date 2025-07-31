@@ -3,8 +3,8 @@
  * Validates Tailwind classes and inline CSS against Gameface supported features
  */
 
-const gamefaceTailwind = require('./lib/rules/tailwind');
-const gamefaceInlineCSS = require('./lib/rules/inline-css');
+const classesRule = require('./lib/rules/classes');
+const inlineCSSRule = require('./lib/rules/inline-css');
 
 module.exports = {
   meta: {
@@ -12,22 +12,22 @@ module.exports = {
     version: '1.0.0'
   },
   rules: {
-    'gameface-tailwind': gamefaceTailwind,
-    'gameface-inline-css': gamefaceInlineCSS
+    'classes': classesRule,
+    'inline-css': inlineCSSRule
   },
   configs: {
     recommended: {
       plugins: ['gameface'],
       rules: {
-        'gameface/gameface-tailwind': 'error',
-        'gameface/gameface-inline-css': 'error'
+        'gameface-tailwind/classes': 'error',
+        'gameface-tailwind/inline-css': 'error'
       }
     },
     strict: {
       plugins: ['gameface'],
       rules: {
-        'gameface/gameface-tailwind': ['error', { strict: true }],
-        'gameface/gameface-inline-css': ['error', { strict: true }]
+        'gameface-tailwind/classes': ['error', { strict: true }],
+        'gameface-tailwind/inline-css': ['error', { strict: true }]
       }
     }
   }

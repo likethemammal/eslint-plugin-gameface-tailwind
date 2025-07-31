@@ -15,8 +15,8 @@ describe('ESLint Plugin Index', () => {
     expect(plugin.rules).toBeDefined();
     expect(typeof plugin.rules).toBe('object');
     
-    expect(plugin.rules['gameface-tailwind']).toBeDefined();
-    expect(plugin.rules['gameface-inline-css']).toBeDefined();
+    expect(plugin.rules['classes']).toBeDefined();
+    expect(plugin.rules['inline-css']).toBeDefined();
   });
 
   test('should have configs property with presets', () => {
@@ -31,15 +31,15 @@ describe('ESLint Plugin Index', () => {
     const recommended = plugin.configs.recommended;
     
     expect(recommended.rules).toBeDefined();
-    expect(recommended.rules['gameface/gameface-tailwind']).toBe('error');
-    expect(recommended.rules['gameface/gameface-inline-css']).toBe('error');
+    expect(recommended.rules['gameface-tailwind/classes']).toBe('error');
+    expect(recommended.rules['gameface-tailwind/inline-css']).toBe('error');
   });
 
   test('should have correct strict configuration', () => {
     const strict = plugin.configs.strict;
     
     expect(strict.rules).toBeDefined();
-    expect(strict.rules['gameface/gameface-tailwind']).toEqual(['error', { strict: true }]);
-    expect(strict.rules['gameface/gameface-inline-css']).toEqual(['error', { strict: true }]);
+    expect(strict.rules['gameface-tailwind/classes']).toEqual(['error', { strict: true }]);
+    expect(strict.rules['gameface-tailwind/inline-css']).toEqual(['error', { strict: true }]);
   });
 });
