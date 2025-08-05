@@ -1,23 +1,28 @@
 {
   "name": "eslint-plugin-gameface-tailwind",
   "version": "0.1.1",
-  "description": "An ESLint plugin that validates Tailwind CSS classes and inline CSS styles in JavaScript/JSX files against [Coherent Labs Gameface Framework](https://docs.coherent-labs.com/cpp-gameface/) compatibility.",
+  "description": "An ESLint plugin that validates Tailwind CSS classes and inline CSS styles files against [Coherent Labs Gameface Framework](https://docs.coherent-labs.com/cpp-gameface/) compatibility.",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:performance": "jest tests/performance/",
+    "benchmark": "node scripts/benchmark.js",
+    "benchmark:verbose": "node --expose-gc scripts/benchmark.js"
+  },
   "main": "index.js",
+  "files": [
+    "lib",
+    "index.js",
+    "README.md"
+  ],
   "directories": {
     "lib": "lib",
     "test": "tests"
   },
-  "scripts": {
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch",
-    "test:only:performance": "jest tests/performance/",
-    "benchmark": "node scripts/benchmark.js",
-    "benchmark:verbose": "node --expose-gc scripts/benchmark.js",
-    "test": "jest"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@babel/core": "7.28.0",
     "@babel/eslint-parser": "7.28.0",
